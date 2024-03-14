@@ -24,7 +24,7 @@
                         <tbody class="bg-white divide-y divide-gray-200">
                             @foreach($moykalar as $moyka)
                             <tr>
-                                <td class="px-6 py-4 whitespace-no-wrap">{{ $moyka->id }}</td>
+                                <td class="px-6 py-4 whitespace-no-wrap">{{ $loop->iteration}}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $moyka->name }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $moyka->address }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">
