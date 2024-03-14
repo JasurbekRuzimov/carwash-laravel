@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MoykaRequest;
 use App\Models\Moyka;
 use Illuminate\Http\Request;
 
@@ -56,7 +57,7 @@ class MoykaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(MoykaRequest $request, string $id)
     {
         $m = Moyka::find($id);
         $m->name = $request->name;
