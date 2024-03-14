@@ -5,7 +5,7 @@ return [
     'accepted' => ':attribute maydoni qabul qilinishi shart.',
     'accepted_if' => ':other :value bo\'lganda :attribute maydoni qabul qilinishi shart.',
     'active_url' => ':attribute maydoni haqiqiy URL bo\'lishi kerak.',
-    'after' => ':attribute maydoni :date dan keyin sanaga bo\'lishi kerak.',
+    'after' => 'Xato vaqt oraliqini kiritdingiz!.',
     'after_or_equal' => ':attribute maydoni :date ga teng yoki keyin sanaga bo\'lishi kerak.',
     'alpha' => ':attribute maydoni faqat harflarni o\'z ichiga olishi kerak.',
     'alpha_dash' => ':attribute maydoni faqat harflar, sonlar, chiziqchalar va pastki chiziqchalar bo\'lishi kerak.',
