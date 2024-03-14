@@ -15,7 +15,6 @@
                                 <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">ID</th>
                                 <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Moyka nomi</th>
                                 <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Moyka manzili</th>
-                                <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Navbat soni</th>
                                 <th class="px-6 py-3 bg-gray-50"></th>
                             </tr>
                         </thead>
@@ -25,7 +24,6 @@
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $moyka->id }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $moyka->name }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $moyka->address }}</td>
-                                <td class="px-6 py-4 whitespace-no-wrap">5</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">
                                     <a href="{{route('site.showNavbat', $moyka->id)}}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Navbat</a>
                                 </td>
