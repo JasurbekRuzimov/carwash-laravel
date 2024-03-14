@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MoykaRequest;
+use App\Http\Requests\SiteRequest;
 use App\Models\Moyka;
 use App\Models\Order;
 use Illuminate\Http\Request;
@@ -27,15 +29,15 @@ class SiteController extends Controller
         return view('order.create', compact('moyka'));
     }
 
-    public function storeOrder(Request $request, $moyka_id)
+    public function storeOrder(SiteRequest $request)
     {
         $order = new Order();
-        $order->moyka_id = $moyka_id;
+        $order->moyka_id = $request->moyka_id;
         $order->user_id = auth()->user()->id;
         $order->from = $request->from;
         $order->to = $request->to;
         $order->save();
-        return redirect()->route('site.showNavbat', $moyka_id);
+        return redirect()->back()->with('success', 'Navbat muvaffaqiyatli yaratildi');
     }
 
     public function destroyOrder($order_id)
